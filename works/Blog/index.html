@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog-final</title>
+    <link rel="stylesheet" href="plagins/icons/fa/fontawesome-pro-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navigation">
+    <div class="navigation_wrapper">
+        <div class="navigation_logo">Blog <span>template</span></div>
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <button class="openBtn" onclick="openSearch()">
+            <i class="far fa-search"></i>
+        </button>
+        <nav class="navigation_menu">
+            <div class="nav_menu__left">
+                <ul class="nav_menu__left_items">
+                    <li class="menu_left__item">
+                        <a href="#" class="menu_left__item_link">About</a>
+                    </li>
+                    <li class="menu_left__item">
+                        <a href="#" class="menu_left__item_link">Cooperation</a>
+                    </li>
+                    <li class="menu_left__item">
+                        <a href="#" class="menu_left__item_link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_menu__right">
+                <ul class="nav_menu__right_items">
+                    <li class="menu_right__item">
+                        <a href="#" class="menu_right__item_link">Nature</a>
+                    </li>
+                    <li class="menu_right__item">
+                        <a href="#" class="menu_right__item_link">People</a>
+                    </li>
+                    <li class="menu_right__item">
+                        <a href="#" class="menu_right__item_link">Trips</a>
+                    </li>
+                    <li class="menu_right__item">
+                        <a href="#" class="menu_right__item_link">Animals</a>
+                    </li>
+                    <li class="menu_right__item">
+                        <a href="#" class="menu_right__item_link">Fashion</a>
+                    </li>
+                    <li class="menu_right__item">
+                        <a href="#" class="menu_right__item_link">Tech</a>
+                    </li>
+                    <li class="menu_right__dropdown">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <ul class="dropdown_items">
+                            <li><a class="dropdown_items__link" href="#">submenu1</a></li>
+                            <li><a class="dropdown_items__link" href="#">submenu2</a></li>
+                            <li><a class="dropdown_items__link" href="#">submenu3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</nav>
+
+<main>
+    <section class="slider">
+        <div class="slider_items">
+            <div class="slide current">
+                <div class="slide_content">
+                    <img src="img/slider/portrait.png" alt="Portrait">
+                    <h1 class="slide_title">
+                        Maecenas quis lobortis nunc. Nullam sit
+                        vel odio congue vulputate a ut nisi.
+                    </h1>
+                </div>
+                <div class="informer_people__slider_wrapper">
+                    <div class="informer_people__header">
+                        <span class="informer_people__name">People</span>
+                    </div>
+                    <span class="informer_date">
+                        14 september 2016
+                        <a href="#" class="informer_date__link">John Doe</a>
+                    </span>
+                </div>
+            </div>
+            <div class="slide ">
+                <div class="slide_content">
+                    <img src="img/slider/portrait.png" alt="Portrait">
+                    <h1 class="slide_title">
+                        Slide two.
+                    </h1>
+                </div>
+                <div class="informer_people__slider_wrapper">
+                    <div class="informer_people__header">
+                        <span class="informer_people__name">People</span>
+                    </div>
+                    <span class="informer_date">
+                        14 september 2016
+                        <a href="#" class="informer_date__link">John Doe</a>
+                    </span>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide_content">
+                    <img src="img/slider/portrait.png" alt="Portrait">
+                    <h1 class="slide_title">
+                        Slide three.
+                    </h1>
+                </div>
+                <div class="informer_people__slider_wrapper">
+                    <div class="informer_people__header">
+                        <span class="informer_people__name">People</span>
+                    </div>
+                    <span class="informer_date">
+                        14 september 2016
+                        <a href="#" class="informer_date__link">John Doe</a>
+                    </span>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide_content">
+                    <img src="img/slider/portrait.png" alt="Portrait">
+                    <h1 class="slide_title">
+                        Slide four.
+                    </h1>
+                </div>
+                <div class="informer_people__slider_wrapper">
+                    <div class="informer_people__header">
+                        <span class="informer_people__name">People</span>
+                    </div>
+                    <span class="informer_date">
+                        14 september 2016
+                        <a href="#" class="informer_date__link">John Doe</a>
+                    </span>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide_content">
+                    <img src="img/slider/portrait.png" alt="Portrait">
+                    <h1 class="slide_title">
+                        Slide five.
+                    </h1>
+                </div>
+                <div class="informer_people__slider_wrapper">
+                    <div class="informer_people__header">
+                        <span class="informer_people__name">People</span>
+                    </div>
+                    <span class="informer_date">
+                        14 september 2016
+                        <a href="#" class="informer_date__link">John Doe</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fas fa-chevron-left"></i></button>
+            <button id="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section class="sectionFirst">
+        <div class="sectionFirst_gridItems">
+            <div class="grid_item__trips">
+                <div class="grid_item_trips__img">
+                    <div class="informer_trips">
+                        <span class="informer_trips__name">Trips</span>
+                    </div>
+                    <img src="img/images/img1.png" alt="Image">
+                </div>
+                <div class="grid_item__trips_desc">
+                    <h4 class="grid_item__trips_desc_text">
+                        Donec elementum dui semper, pretium dui quis, pre-tium nisl. Nunc quis ornare odio.
+                    </h4>
+                    <span class="informer_date">
+                    11 september 2016
+                    <a href="#" class="informer_date__link">John Doe</a>
+                </span>
+                </div>
+
+            </div>
+            <div class="grid_item_tech">
+                <div class="grid_item__tech_img">
+                    <div class="informer_tech">
+                        <span class="informer_tech__name">Tech</span>
+                    </div>
+                    <img src="img/images/img2.png" alt="Image">
+                </div>
+                <div class="grid_item_tech__desc">
+                    <h3 class="grid_item_tech__desc_text">
+                        Maecenas quis lobortis nunc. Nullam sit amet augue vel odio congue vulputate a ut nisi.
+                    </h3>
+                    <span class="informer_date">
+                    14 september 2016
+                    <a href="#" class="informer_date__link">John Doe</a>
+                </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionSecond">
+        <div class="sectionSecond_gridItems">
+            <div class="grid_big__item_trips">
+                <div class="grid_big__item_trips__img">
+                    <div class="grid_big__item_trips__img_text">
+                        <h1 class="big_item__trips_title">
+                            Proin congue elit fringilla
+                        </h1>
+                        <p class="big_item__trips_subtitle">
+                            sodales tellus interdum fermentum nulla. Aliquam vitae arcu condimentum,
+                            consectetur diam sed, ultrices urna.
+                        </p>
+                    </div>
+                    <div class="big_item__trips_informer__wrapper">
+                        <div class="informer_trip">
+                            <span class="informer_trips__name">Trips</span>
+                        </div>
+                        <span class="informer_date">
+                        11 september 2016
+                        <a href="#" class="informer_date__link">John Doe</a>
+                    </span>
+                    </div>
+                    <img src="img/images/img3_big.png" alt="Image">
+                </div>
+            </div>
+            <div class="grid_small__item_nature">
+                <div class="grid_small__item_nature__img">
+                    <div class="informer_nature">
+                        <span class="informer_nature__name">Nature</span>
+                    </div>
+                    <img src="img/images/img4.png" alt="Image">
+                </div>
+                <div class="grid_small__item_nature__desc">
+                    <h4 class="grid_small__item_nature__desc_text">
+                        Donec elementum dui semper, pretium dui quis, pre-tium nisl. Nunc quis ornare odio.
+                    </h4>
+                    <span class="informer_date">
+                    11 september 2016
+                    <a href="#" class="informer_date__link">John Doe</a>
+                </span>
+                </div>
+            </div>
+            <div class="grid_small__item_people">
+                <div class="grid_small__item_people__img">
+                    <div class="informer_people">
+                        <span class="informer_people__name">People</span>
+                    </div>
+                    <img src="img/images/img5.png" alt="Image">
+                </div>
+                <div class="grid_small__item_people__desc">
+                    <h4 class="grid_small__item_people__desc_text">
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                    </h4>
+                    <span class="informer_date">
+                    11 september 2016
+                    <a href="#" class="informer_date__link">John Doe</a>
+                </span>
+                </div>
+
+            </div>
+            <div class="grid_small__item_tech">
+                <div class="grid_small__item_tech_img">
+                    <div class="informer_tech">
+                        <span class="informer_tech__name">Tech</span>
+                    </div>
+                    <img src="img/images/img6.png" alt="Image">
+                </div>
+                <div class="grid_small__item_tech__desc">
+                    <h3 class="grid_small__item_tech__desc_text">
+                        Sed arcu ipsum, convallis quis porttitor bibendum, convallis non enim.
+                    </h3>
+                    <span class="informer_date">
+                    14 september 2016
+                    <a href="#" class="informer_date__link">John Doe</a>
+                </span>
+                </div>
+            </div>
+            <div class="grid_small_item__trips">
+                <div class="grid_small_item__trips__img">
+                    <div class="informer_trips">
+                        <span class="informer_trips__name">Trips</span>
+                    </div>
+                    <img src="img/images/img7.png" alt="Image">
+                </div>
+                <div class="grid_small_item__trips_desc">
+                    <h4 class="grid_small_item__trips_desc_text">
+                        Donec elementum dui semper, pretium dui quis, pre-tium nisl.
+                    </h4>
+                    <span class="informer_date">
+                    11 september 2016
+                    <a href="#" class="informer_date__link">John Doe</a>
+                </span>
+                </div>
+
+            </div>
+            <div class="grid_small_item__trips">
+                <div class="grid_small_item__trips__img">
+                    <div class="informer_trips">
+                        <span class="informer_trips__name">Trips</span>
+                    </div>
+                    <img src="img/images/img8.png" alt="Image">
+                </div>
+                <div class="grid_small_item__trips_desc">
+                    <h4 class="grid_small_item__trips_desc_text">
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                    </h4>
+                    <span class="informer_date">
+                    11 september 2016
+                    <a href="#" class="informer_date__link">John Doe</a>
+                </span>
+                </div>
+
+            </div>
+            <div class="grid_small_item__fashion">
+                <div class="grid_small_item__fashion__img">
+                    <div class="informer_fashion">
+                        <span class="informer_fashion__name">Fashion</span>
+                    </div>
+                    <img src="img/images/img9.png" alt="Image">
+                </div>
+                <div class="grid_small_item__fashion_desc">
+                    <h4 class="grid_small_item__fashion_desc_text">
+                        Sed arcu ipsum, convallis quis porttitor bibendum, convallis non enim.
+                    </h4>
+                    <span class="informer_date">
+                    11 september 2016
+                    <a href="#" class="informer_date__link">John Doe</a>
+                </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionThird">
+        <div class="sectionThird_gridItems">
+            <div class="grid_item__trips">
+                <div class="grid_item_trips__img">
+                    <div class="informer_trips">
+                        <span class="informer_trips__name">Trips</span>
+                    </div>
+                    <img src="img/images/img1.png" alt="Image">
+                </div>
+                <div class="grid_item__trips_desc">
+                    <h4 class="grid_item__trips_desc_text">
+                        Donec elementum dui semper, pretium dui quis, pre-tium nisl. Nunc quis ornare odio.
+                    </h4>
+                    <span class="informer_date">
+                    11 september 2016
+                    <a href="#" class="informer_date__link">John Doe</a>
+                </span>
+                </div>
+            </div>
+            <div class="grid_item_tech">
+                <div class="grid_item__tech_img">
+                    <div class="informer_tech">
+                        <span class="informer_tech__name">Tech</span>
+                    </div>
+                    <img src="img/images/img2.png" alt="Image">
+                </div>
+                <div class="grid_item_tech__desc">
+                    <h3 class="grid_item_tech__desc_text">
+                        Maecenas quis lobortis nunc. Nullam sit amet augue vel odio congue vulputate a ut nisi.
+                    </h3>
+                    <span class="informer_date">
+                    14 september 2016
+                    <a href="#" class="informer_date__link">John Doe</a>
+                </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="singup">
+        <div class="singup_wrapper">
+            <div class="singup_description">
+                <h1 class="singup_description_title">Newsletter</h1>
+                <p class="singup_description_subtitle">
+                    Donec elementum dui semper, pretium dui quis, pretium nisl.
+                </p>
+            </div>
+            <form action="signUpForm" class="singup_form">
+                <input type="text" name="subscribe">
+                <input type="submit" value="Sign up" name="subscribe">
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer_wrapper">
+        <div class="footer_text">
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Try awsome tool for desgners <span>symu.co</span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
